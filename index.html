@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="V3lUSRO_rCarFwjUwh4EE8lPc3A2k9CBD8d5MyeG7cs" />
+  
+  <title>Mr Danish Jani — Designer • Video Editor • Web Developer</title>
+  <meta name="description" content="Portfolio of Danish Jani — graphic designer, video editor & web developer with 3+ years of experience. Logos, branding, website development, and editing for live streaming apps & global clients." />
+  <meta name="keywords" content="Danish Jani, graphic designer, logo design, video editing, web developer, Malakwal, Pakistan, Fiverr" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1221;         /* rich dark */
+      --card:#151936;       /* card surface */
+      --muted:#9498b8;      /* muted text */
+      --text:#ecf0ff;       /* main text */
+      --brand:#7c7cff;      /* accent */
+      --brand-2:#3ddc97;    /* secondary accent */
+      --ring: 0 0 0 3px rgba(124,124,255,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:linear-gradient(180deg, #0b0e1b 0%, #0f1221 60%, #0f1221 100%);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;background:rgba(15,18,33,.65);backdrop-filter:blur(14px);z-index:99;border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.3px}
+.brand__logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#9f9fff);box-shadow:0 8px 20px rgba(124,124,255,.35)}
+.nav a{opacity:.9}
+.menu{display:flex;gap:18px}
+.menu a{font-weight:600;font-size:.95rem;color:#cfd6ff}
+.cta{padding:10px 16px;border-radius:12px;background:linear-gradient(135deg,var(--brand),#9f9fff);color:#0b0e1b;font-weight:800;box-shadow:0 10px 24px rgba(124,124,255,.35)}
+
+/* HERO */
+.hero{padding:80px 0 40px}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(124,124,255,.12);color:#cfd6ff;border:1px solid rgba(124,124,255,.25)}
+.title{font-size:3rem;line-height:1.1;margin:14px 0 10px}
+.subtitle{color:var(--muted);font-size:1.1rem}
+.hero-actions{display:flex;gap:14px;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#e8ebff;font-weight:700}
+.btn--primary{background:linear-gradient(135deg,var(--brand),#9f9fff);color:#0b0e1b;border:0}
+.stats{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
+.stat{padding:14px 18px;border-radius:14px;background:var(--card);border:1px solid rgba(255,255,255,.06)}
+.stat b{font-size:1.2rem}
+.hero-art{position:relative}
+.card-hero{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:22px;padding:16px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.thumb{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+
+/* Center hero buttons */
+.hero-actions {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 14px;
+  margin-top: 22px;
+  align-items: center; /* center horizontally */
+}
+
+/* Center hero stats */
+.stats {
+  display: flex;
+  gap: 22px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* vertically aligns items */
+  text-align: center;      /* centers text inside each stat box */
+}
+
+/* SECTION */
+section{padding:60px 0}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.h2{font-size:2rem;margin:0}
+.lead{color:var(--muted)}
+
+/* SERVICES */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+.card h3{margin:6px 0 8px}
+
+/* PORTFOLIO */
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.work{position:relative;overflow:hidden;border-radius:16px;border:1px solid rgba(255,255,255,.08)}
+.work figcaption{position:absolute;inset:auto 0 0 0;padding:12px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.55));font-weight:600}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.badge{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.12);border-radius:999px;color:#d7dcff;background:rgba(255,255,255,.03)}
+.list{display:grid;gap:8px;margin:0;padding-left:18px}
+
+/* TESTIMONIALS */
+.testi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quote{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+
+/* CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: column; /* stack everything vertically */
+  gap: 24px;
+}
+.contact .card {
+  width: 100%;       /* full width */
+  height: auto;      /* auto height so it fits content */
+  position: relative; /* no sticky needed */
+}
+
+.contact form {
+  width: 100%;       /* full width */
+}
+
+form{display:grid;gap:12px}
+.field{display:flex;gap:10px}
+input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#e8ebff}
+textarea{min-height:120px}
+.note{color:var(--muted);font-size:.9rem}
+
+footer{padding:28px 0;color:#b8bdea;border-top:1px solid rgba(255,255,255,.06)}
+
+/* Quick Info Card Fix - Centered Buttons */
+.contact .card {
+  width: 100%;
+  padding: 20px;            
+  box-sizing: border-box;   
+  display: flex;
+  flex-direction: column;   
+  gap: 12px;                
+  align-items: center;      /* center everything horizontally */
+}
+
+.contact .card div {
+  display: flex;
+  flex-direction: column;   
+  gap: 6px;
+  align-items: center;      /* center text vertically inside div */
+}
+
+.contact .card a.btn {
+  width: auto;              /* let buttons adjust naturally */
+  text-align: center;
+  margin: 4px 0;            
+}
+
+/* RESPONSIVE */
+@media (max-width: 960px){
+  .hero-inner{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .portfolio{grid-template-columns:1fr 1fr}
+  .about{grid-template-columns:1fr}
+  .testi{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+  .title{font-size:2.2rem}
+  .cards,.portfolio,.testi{grid-template-columns:1fr}
+  .menu{display:none}
+}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR --><nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#home">
+      <img src="https://i.postimg.cc/7YHFLvnX/Pakistan-Official.png" alt="Logo" class="brand__logo" />
+      <span>MR DANISH <span style="color:var(--brand-2)">JANI</span></span>
+    </a>
+
+    <div class="menu" id="menu">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#profiles">Profiles</a>
+      <a href="#contact">Contact</a>
+      <a class="cta" href="mailto:danishasifjaved@gmail.com">Hire Me</a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      &#9776; <!-- Unicode for 3-line menu -->
+    </div>
+  </div>
+</nav>
+
+<style>
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(15,18,33,0.85);
+  backdrop-filter: blur(14px);
+  z-index: 999;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav-inner {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.menu a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #cfd6ff;
+  opacity: 1;
+}
+
+.menu a.cta {
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,var(--brand),#9f9fff);
+  color: #0b0e1b;
+  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(124,124,255,.35);
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #cfd6ff;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .menu {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: rgba(15,18,33,0.95);
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none; /* hidden by default */
+    border-left: 1px solid rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    border-radius: 0 0 0 12px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  text-align: center;     /* for text inside <p> */
+  gap: 6px;               /* optional space between lines */
+}
+
+</style>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
+  
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <!-- rest of your original code remains exactly the same -->
+
+
+  </nav>  
+    <!-- HERO --> 
+    <header id="home" class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="pill">Designer • Video Editor • Web Developer</span>
+        <h1 class="title">I Craft <span style="color:var(--brand)">Creative Logos</span>,<br>
+          Edit <span style="color:var(--brand-2)">Engaging Videos</span>, <br> Build
+          <span style="text-decoration:underline">Clean Websites</span>.</h1>
+        <p class="subtitle">3+ Years Working With Live Streaming Apps & International Teams — Global Managers, Super Admins, BD Officials, Coin Sellers & Agency Owners.</p>
+        
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#work">PORTFOLIO</a>
+        
+        <a class="btn btn--primary" href="#profiles">PROFILE</a>
+        
+          <a class="btn" href="#contact">CONTACT US</a>
+        </div>
+        <div class="stats">
+           <div class="stat"><b>3+ Yrs</b> Professional Experience</div>
+           
+          <div class="stat"><b>150+ </b> Design & Edit Deliveries</div>
+         
+          <div class="stat"><b>10+ </b> Live Apps Partners</div>
+          
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="card-hero">
+          <div class="grid-2">
+            <img class="thumb" src="https://picsum.photos/seed/logo/640/400" alt="Logo design sample" />
+            <img class="thumb" src="https://picsum.photos/seed/video/640/400" alt="Video editing frame" />
+            <img class="thumb" src="https://picsum.photos/seed/web/640/400" alt="Website preview" />
+            <img class="thumb" src="https://picsum.photos/seed/brand/640/400" alt="Branding mockup" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>  <!-- SERVICES --> 
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2">Services</h2>
+        <h2 class="h2"></h2>
+        
+        <p class="lead"></p>
+        
+      </div>
+      <div class="cards">
+        <div class="card">
+          <span class="badge">Branding</span>
+          <h3>Logo Design & Identity</h3>
+          <p>Unique Logos, Brand Kits, Social Assets. Delivered With Editable Source Files (AI/PSD), JPG, PNG And Usage Guide.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Editing</span>
+          <h3>Video Editing</h3>
+          <p>YouTube/TikTok Edits, Promos, Ads, Subtitles, Color & Sound Polish. Fast Delivery With Revisions Until You’re Happy.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Web</span>
+          <h3>Website Development</h3>
+          <p>Clean, Responsive Sites Using HTML, CSS & JavaScript. Landing Pages, Portfolios, Agency Sites And App Promo Pages.</p>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- PORTFOLIO GRID -->  <section id="work">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2">Selected Work</h2>
+        <p class="lead"></p>
+      </div>
+      <div class="portfolio">
+        <figure class="work">
+          <img src="https://picsum.photos/seed/p1/800/600" alt="Logo project" />
+          <figcaption>Logo — StreamLive</figcaption>
+        </figure>
+        <figure class="work">
+          <img src="https://picsum.photos/seed/p2/800/600" alt="Branding" />
+          <figcaption>Branding — Aura Media</figcaption>
+        </figure>
+        <figure class="work">
+          <a href="#" aria-label="Project website link">
+            <img src="https://picsum.photos/seed/p3/800/600" alt="Website build" />
+          </a>
+          <figcaption>Website — Live App Agency</figcaption>
+        </figure>
+        <figure class="work">
+          <img src="https://picsum.photos/seed/p4/800/600" alt="Video frame" />
+          <figcaption>Video Edit — Promo Ad</figcaption>
+        </figure>
+        <figure class="work">
+          <img src="https://picsum.photos/seed/p5/800/600" alt="Thumbnail" />
+          <figcaption>Thumbnail Pack — 20x</figcaption>
+        </figure>
+        <figure class="work">
+          <img src="https://picsum.photos/seed/p6/800/600" alt="Landing page" />
+          <figcaption>Landing Page — Creator Tools</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>  <!-- ABOUT -->  <section id="about">
+    <div class="container about">
+      <div>
+        <h2 class="h2">About MR DANISH</h2>
+        <p class="lead">
+          <div class="about-text">
+  <p>Hi, I’m <b>Danish Jani</b> 👋</p>
+  <p>I’m a professional <b>graphic designer, video editor, and web developer</b> with over <b>3 years of experience</b> delivering creative and technical solutions.</p>
+  <p>I’ve collaborated with <b>international clients and high-level teams</b>, including <b>Global Managers, Super Admins, BD Officials, Official Coin Sellers, and Agency Owners</b> from various live streaming apps. This experience has given me a deep understanding of <b>how digital businesses and apps grow worldwide</b>.</p>
+  
+  <p>✅ <b>Expertise</b></p>
+  <p>🎨 Logo Design & Branding – Adobe Illustrator, Photoshop, PixelLab</p>
+  <p>🎥 Video Editing & Content Creation – Premiere Pro, Filmora (ads, YouTube, TikTok, professional promos)</p>
+  <p>🌐 Website Development – HTML, CSS, JavaScript (personal sites, business sites, agency sites)</p>
+  <p>🏗 3D & Technical Design – Autodesk Maya, AutoCAD</p>
+  
+  <p>✅ <b>Why Work With Me?</b></p>
+  <p>- Trusted by international teams & agencies</p>
+  <p>- Experienced with live streaming apps & digital businesses</p>
+  <p>- Creative and professional results for every project</p>
+  <p>- Fast delivery with unlimited revisions</p>
+  <p>- Long-term support and friendly communication</p>
+  
+  <p>I also <b>manage my own websites and online projects</b>, keeping me updated with the latest trends and real-time client needs.</p>
+  <p>If you’re looking for someone who understands both <b>creativity and business growth</b>, I’m the right choice. Let’s collaborate and take your ideas to the next level 🚀</p>
+  <p>Thank you for visiting my profile! I look forward to working with you globally 🌎</p>
+</div>
+          </p>
+        <ul class="list">
+          <li>3+ years experience delivering logos, edits & websites</li>
+          <li>Owns & runs multiple websites — understands real business needs</li>
+          <li>Tools: Illustrator, Photoshop, Premiere Pro, Filmora, PixelLab, Maya, AutoCAD</li>
+        </ul>
+      </div>
+      <div>
+        <div class="cards">
+          <div class="card">
+            <h3>Education</h3>
+            <p>High School (in progress). Focused on continuous skill growth & client work.</p>
+          </div>
+          <div class="card">
+            <h3>Certifications</h3>
+            <p>Plan: Google Digital Garage, Canva Design School, Coursera (Design/Web).</p>
+          </div>
+          <div class="card">
+            <h3>Expertise</h3>
+            <p>Logo & branding, video editing, responsive websites, social content, 3D assets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- TESTIMONIALS -->  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2">Testimonials</h2>
+        <br>
+        <p class="lead">  </p>
+      </div>
+      <div class="testi">
+       
+        <div class="quote">“Website was clean, responsive and on-brand.” — <b>Global Manager</b></div>
+        
+          <div class="quote">“Great video edits for our app promos. Clear communication.” — <b>BD Official</b></div>
+        
+         <div class="quote">“Fast delivery and premium logo concepts. Will hire again.” — <b>Agency Owner</b>
+         
+         
+         </div>
+      </div>
+    </div>
+    
+    <!-- Freelancing Profiles Box -->
+    <section id="profiles">
+  <div class="container">
+<div class="card" style="margin-top:20px; text-align:center;">
+  <h3>FREELANCING PROFILES</h3>
+  <p>Connect with me on these platforms:</p>
+  <div style="display:flex; flex-direction:column; align-items:center; gap:12px; margin-top:12px;">
+    
+    <a href="https://pro.fiverr.com/s/LdX009A" target="_blank" class="btn btn--primary" style="width:200px; text-transform:uppercase; display:flex; justify-content:center; align-items:center;">FIVERR</a>
+    
+    <a href="https://www.upwork.com/freelancers/~01c99e84c6a4eb52e2?mp_source=share" target="_blank" class="btn btn--primary" style="width:200px; text-transform:uppercase; display:flex; justify-content:center; align-items:center; background:linear-gradient(135deg,#1abc9c,#16a085);">UPWORK</a>
+    
+    <a href="https://www.freelancer.com/u/Danishjanino1?frm=Danishjanino1&sb=t" target="_blank" class="btn btn--primary" style="width:200px; text-transform:uppercase; display:flex; justify-content:center; align-items:center; background:linear-gradient(135deg,#e67e22,#d35400);">FREELANCER</a>
+    
+    <a href="https://www.guru.com/freelancers/danish-jani-g" target="_blank" class="btn btn--primary" style="width:200px; text-transform:uppercase; display:flex; justify-content:center; align-items:center; background:linear-gradient(135deg,#3498db,#2980b9);">GURU</a>
+  </div>
+</div>
+    
+</section>
+
+  </section>  <!-- CONTACT -->  <section id="contact">
+    <div class="container contact">
+      <div>
+        <h2 class="h2">Let’s Work Together</h2>
+        <p class="lead">Tell me about your project. I usually reply within a few hours.</p>
+        <form onsubmit="event.preventDefault(); alert('Thanks! I will reply soon.');">
+          <div class="field">
+            <input type="text" placeholder="MR DANISH" required />
+            <input type="email" placeholder="Danishasifjaved@gmail.com" required />
+          </div>
+          <input type="text" placeholder="Project title (e.g., Logo for fintech)" required />
+          <textarea placeholder="A few lines about your goals & timeline"></textarea>
+          <button class="btn btn--primary" type="submit">Send Message</button>
+          <p class="note">Directly Email: <a href="mailto:danish@example.com">Danishasifjaved@gmail.com</a></p>
+        </form>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Contact Info</h3>
+          
+          
+          <div style="display:flex;gap:10px;margin-top:10px">
+            <a class="btn" href="https://wa.me/923400278535" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+             <a class="btn" href="#" aria-label="https://www.tiktok.com/@janigno1?_t=ZN-8zKd1oghLfC&_r=1">TikTok</a>
+            <a class="btn" href="#" aria-label="https://youtube.com/@mrdanishjani?feature=shared">YouTube</a>
+            <a class="btn" href="#" aria-label="Facebook">Facebook</a>
+            <a class="btn" href="#" aria-label="https://www.instagram.com/danishjanig?igsh=MTdxOXJnc3g1cW9zcw==">Instagram</a>
+            
+            <p><b>Languages:</b> English, Urdu , Punjabi</p>
+          <p><b>Location:</b> Malakwal, Mandi Bahauddin, Pakistan</p>
+          
+          <p><b>Available for:</b> Logo Design, Video Editing, Websites</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+  <div class="container footer-center">
+    <p>© <span id="y"></span> Mr Danish . All Rights Reserved.</p>
+    <p style="color:#98a0cc">Built with HTML & CSS</p>
+  </div>
+</footer>
+  
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923400278535" target="_blank" class="whatsapp-float">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white">
+    <path d="M16 3C8.3 3 2 9.3 2 17c0 3.1.9 6 2.6 8.4L2 29l4.7-2.5C10.9 28.1 13.9 29 17 29c7.7 0 14-6.3 14-14S23.7 3 16 3zm0 25c-2.8 0-5.4-.8-7.6-2.3l-.5-.3-2.8 1.5 1.5-2.8-.3-.5C5.8 22.4 5 19.8 5 17 5 10.9 10.9 5 17 5s12 5.9 12 12-5.9 12-12 12zm6.2-8.8c-.3-.2-1.7-.9-2-.9s-.5.1-.7.2-.5.2-.8.6-.9.7-1.1.8-.4.2-.6.1-.9-.3-1.7-.7c-.6-.3-1-.6-1.3-1s-.6-.8-.7-1.1-.1-.5 0-.7c.1-.2.7-1.6.9-2 .2-.4.4-.5.7-.7s.5-.2.7-.3.3-.2.5-.3.2-.1.3-.2c.1 0 .2-.1.3-.2s.1-.2.2-.3c.1-.2 0-.3-.1-.5s-.8-1.8-1.1-2.5c-.3-.7-.6-.6-.8-.6s-.3 0-.5 0-.5.1-.8.4-.9.9-1 1.2-.6.7-.5 1.2.5 1.2.6 1.3c.1.2.7 1.1 1.4 1.9s2 2.6 4.7 3.4c.7.3 1.2.5 1.6.7.7.2 1.3.1 1.7.1s1.1-.5 1.3-1c.2-.5.2-.9.2-1 .1-.2.1-.4 0-.5z"/>
+  </svg>
+</a>
+
+<style>
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 45px;
+    height: 45px;
+    bottom: 12px;
+    right: 12px;
+  }
+  .whatsapp-float svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+</style>
+</html>
