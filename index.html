@@ -21,6 +21,12 @@
 <meta name="twitter:description" content="Portfolio of Danish Jani — graphic designer, video editor & web developer with 3+ years of experience.">
 <meta name="twitter:image" content="https://i.postimg.cc/Qd4Gmpnn/logo.png">
 
+<meta property="og:title" content="Danish Jani - Designer, Editor & Developer" />
+<meta property="og:description" content="Professional designer, editor & developer from Malakwal, Pakistan. Worked with global clients & agencies." />
+<meta property="og:image" content="https://i.postimg.cc/Qd4Gmpnn/logo.png" />
+<meta property="og:url" content="https://mrdanish.netlify.app/" />
+<meta property="og:type" content="website" />
+
   <meta name="keywords" content="Danish Jani, graphic designer, logo design, video editing, web developer, Malakwal, Pakistan, Fiverr" />
   <link rel="icon" href="https://i.postimg.cc/Qd4Gmpnn/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -175,6 +181,57 @@ footer{padding:28px 0;color:#b8bdea;border-top:1px solid rgba(255,255,255,.06)}
   .menu{display:none}
 }
   </style>
+  
+<style>
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 45px;
+    height: 45px;
+    bottom: 12px;
+    right: 12px;
+  }
+  .whatsapp-float svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+</style>
 </head>
 <body>
   <!-- NAVBAR --><nav class="nav">
@@ -271,6 +328,26 @@ footer{padding:28px 0;color:#b8bdea;border-top:1px solid rgba(255,255,255,.06)}
     display: block;
   }
 }
+
+/* Social Icons */
+.social {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap; /* allows wrap if too small */
+}
+
+.social a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.social a img:hover {
+  transform: scale(1.15);
+}
+
 
 .footer-center {
   display: flex;
@@ -509,7 +586,7 @@ hamburger.addEventListener('click', () => {
       </div>
       <div>
         <div class="card">
-          <h3>Contact Info</h3>
+          <h1><b>Contact Info</b></h1>
           
           
           <div style="display:flex;gap:10px;margin-top:10px">
@@ -523,6 +600,7 @@ hamburger.addEventListener('click', () => {
           <p><b>Location:</b> Malakwal, Mandi Bahauddin, Pakistan</p>
           
           <p><b>Available for:</b> Logo Design, Video Editing, Websites</p>
+          
           </div>
         </div>
       </div>
@@ -548,54 +626,4 @@ hamburger.addEventListener('click', () => {
   </svg>
 </a>
 
-<style>
-/* Floating WhatsApp Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  z-index: 9999;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.whatsapp-float svg {
-  width: 30px;
-  height: 30px;
-}
-
-@media (max-width: 768px) {
-  .whatsapp-float {
-    width: 50px;
-    height: 50px;
-    bottom: 15px;
-    right: 15px;
-  }
-  .whatsapp-float svg {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .whatsapp-float {
-    width: 45px;
-    height: 45px;
-    bottom: 12px;
-    right: 12px;
-  }
-  .whatsapp-float svg {
-    width: 20px;
-    height: 20px;
-  }
-}
-</style>
 </html>
