@@ -1,4 +1,5 @@
 
+ 
   :root{
     --bg:#0f1221;         /* rich dark */
     --card:#151936;       /* card surface */
@@ -305,3 +306,5 @@ align-items: center;    /* center horizontally */
 text-align: center;     /* for text inside <p> */
 gap: 6px;               /* optional space between lines */
 }
+  
+  
