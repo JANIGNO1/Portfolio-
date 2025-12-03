@@ -76,9 +76,88 @@ section{padding:60px 0}
 .work figcaption{position:absolute;inset:auto 0 0 0;padding:12px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.55));font-weight:600}
 
 /* ABOUT */
-.about{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.badge{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.12);border-radius:999px;color:#d7dcff;background:rgba(255,255,255,.03)}
-.list{display:grid;gap:8px;margin:0;padding-left:18px}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Text Box */
+.about-text-box {
+  flex: 1 1 400px;
+  background: rgba(255,255,255,0.03);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  backdrop-filter: blur(6px);
+}
+
+.about-text-box h2 {
+  color: var(--brand-2);
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.about-text ul.list {
+  margin-top: 16px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.about-text ul.list li {
+  margin-bottom: 8px;
+}
+
+/* Cards Box */
+.about-cards {
+  flex: 1 1 300px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px);
+}
+
+.card h3 {
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+}
 
 /* TESTIMONIALS */
 .testi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
